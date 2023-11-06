@@ -1,5 +1,7 @@
 # POLIMI Software Engineering Project 2022
-Software version of the board game **"Eriantys"**, released by **Cranio Creations®**
+![alt text](https://cf.geekdo-images.com/DzhJxVjMhGQadReXJmbIaQ__opengraph/img/qv98Tqw2-X1Mj-0J6OMlRoVC_Uk=/0x0:2988x1569/fit-in/1200x630/filters:strip_icc()/pic6253341.jpg)
+
+Software version of the board game [**Eriantys**](https://www.craniocreations.it/prodotto/eriantys), released by [**Cranio Creations®**](https://www.craniocreations.it/)
 
 Developed by [@InfantinoAndrea00](https://www.github.com/InfantinoAndrea00), [@FedeLampe11](https://www.github.com/FedeLampe11), [@carloma7](https://www.github.com/carloma7)
 ## Features implemented

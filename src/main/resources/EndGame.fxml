@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-image: url(wallpaper.jpg)" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.EndGameScreen">
+<center>
+    <BorderPane fx:id="endGame">
+            <center>
+                <VBox alignment="CENTER">
+                    <Label fx:id="textTop" layoutX="374.0" layoutY="359.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text=" Congratulations " textFill="WHITE">
+                        <font>
+                            <Font name="Snap ITC" size="40.0" />
+                        </font></Label>
+                    <Group>
+                        <ImageView fx:id="cloudImage" fitHeight="165.0" fitWidth="254.0" translateY="75.0" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);">
+                            <Image url="@connect_button.png" />
+                        </ImageView>
+                        <ImageView fx:id="playerImage1" fitHeight="150" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, powderblue, 30, 0.6, 0.0, 0.0);">
+
+                        </ImageView>
+                        <ImageView fx:id="playerImage2" fitHeight="150" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, powderblue, 30, 0.6, 0.0, 0.0);">
+
+                        </ImageView>
+                    </Group>
+                    <Label fx:id="textDown" layoutX="0" layoutY="0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text=" You win! " textFill="WHITE">
+                        <font>
+                            <Font name="Snap ITC" size="40.0" />
+                        </font></Label>
+                </VBox>
+            </center>
+            <bottom>
+                <BorderPane>
+                    <right>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" layoutX="796.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logo.png" />
+                            </image>
+                        </ImageView>
+                    </right>
+                </BorderPane>
+            </bottom>
+    </BorderPane>
+</center>
+</BorderPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-image: url(wallpaper.jpg)" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.GameCreationScreen">
+    <stylesheets>
+        <String fx:value="style.css" />
+    </stylesheets>
+    <VBox fx:id="window" alignment="CENTER" prefHeight="546.0" prefWidth="967.0" spacing="10" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+            <Label layoutX="-11.0" layoutY="118.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="Insert the number of PLayers:" textFill="WHITE">
+                <font>
+                    <Font name="Snap ITC" size="30.0" />
+                </font></Label>
+        <HBox alignment="CENTER" spacing="30">
+            <ToggleButton fx:id="p2" selected="true" text="2">
+                <font>
+                    <Font name="Snap ITC" size="30.0" />
+                </font>
+            <toggleGroup>
+               <ToggleGroup fx:id="PlayerNumber" />
+            </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="p3" pickOnBounds="false" text="3" toggleGroup="$PlayerNumber">
+                <font>
+                    <Font name="Snap ITC" size="30.0" />
+                </font>
+            </ToggleButton>
+            <ToggleButton fx:id="p4" pickOnBounds="false" text="4" toggleGroup="$PlayerNumber">
+                <font>
+                    <Font name="Snap ITC" size="30.0" />
+                </font>
+            </ToggleButton>
+        </HBox>
+            <Label layoutX="349.0" layoutY="118.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="Choose the game mode:" textFill="WHITE">
+                <font>
+                    <Font name="Snap ITC" size="30.0" />
+                </font></Label>
+            <HBox alignment="CENTER" spacing="30">
+                <ToggleButton fx:id="N" pickOnBounds="false" selected="true" text="Normal">
+                    <font>
+                        <Font name="Snap ITC" size="30.0" />
+                    </font>
+            <toggleGroup>
+               <ToggleGroup fx:id="Mode" />
+            </toggleGroup>
+                </ToggleButton>
+                <ToggleButton fx:id="E" pickOnBounds="false" text="Expert" toggleGroup="$Mode">
+                    <font>
+                        <Font name="Snap ITC" size="30.0" />
+                    </font>
+                </ToggleButton>
+            </HBox>
+        <Button fx:id="button" contentDisplay="CENTER" layoutX="165.0" layoutY="254.0" prefWidth="243.0" text="Start">
+            <font>
+                <Font name="Snap ITC" size="40.0" />
+            </font>
+            <graphic>
+                <ImageView fx:id="buttonImage" fitHeight="165.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);">
+                    <Image url="@connect_button.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </VBox>
+
+</AnchorPane>

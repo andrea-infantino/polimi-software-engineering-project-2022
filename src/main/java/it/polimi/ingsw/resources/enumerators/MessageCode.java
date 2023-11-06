@@ -1,0 +1,50 @@
+package it.polimi.ingsw.resources.enumerators;
+
+public enum MessageCode {
+
+    //Messages from client to server
+    START,
+    EXPERT_MODE_AND_PLAYER_NUMBER,
+    ADD_NEW_PLAYER,
+    ADD_PLAYER_IN_TEAM,
+    PLAY_ASSISTANT_CARD,
+    MOVE_STUDENTS,
+    MOVE_MOTHER_NATURE,
+    CHOOSE_CLOUD_TILE,
+
+    //Messages from server to client
+    PLAYERS_AND_MODE,
+    START_GAME_SESSION,
+    START_PLANNING_PHASE,
+    START_ACTION_PHASE_1,
+    START_ACTION_PHASE_2,
+    START_ACTION_PHASE_3,
+    MODEL_CHANGED,
+    NEW_TURN,
+    END_GAME,
+
+    //Response Messages
+    ACK,
+    ADMIN_CLIENT,
+    GUEST_CLIENT,
+    CREATING_GAME,
+    GAME_CREATED,
+    PLAYER_ADDED,
+    MAX_PLAYER_NUMBER_REACHED,
+    FULL_TEAM,
+    UNPLAYABLE_ASSISTANT_CARD,
+    INVALID_MOVE,
+    NOT_YOUR_TURN,
+    EXIT,
+
+    //Character cards
+    PLAY_A_CHARACTER_CARD,
+    ACTIVATE_CHARACTER_CARD_EFFECT,
+    PLAYER_USED_CHARACTER_CARD,
+    NOT_ENOUGH_COINS,
+    ALREADY_PLAYED_A_CHARACTER_CARD,
+    WAIT_FOR_CHARACTER_CARD_PARAMETERS,
+
+    PING
+
+}

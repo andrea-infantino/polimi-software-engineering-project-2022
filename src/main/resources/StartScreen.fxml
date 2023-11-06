@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-image: url(wallpaper.jpg)" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.StartScreen">
+   <center>
+      <BorderPane fx:id="titleScreen">
+         <center>
+            <VBox alignment="CENTER">
+               <ImageView layoutX="323.0" layoutY="198.0" style="-fx-effect: dropshadow(gaussian, powderblue, 30, 0.6, 0.0, 0.0);">
+                  <Image url="@title.png" />
+               </ImageView>
+               <Label fx:id="text" layoutX="374.0" layoutY="359.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="Press any Key to start..." textFill="WHITE">
+                  <font>
+                     <Font name="Snap ITC" size="40.0" />
+                  </font></Label>
+            </VBox>
+         </center>
+         <bottom>
+            <BorderPane>
+               <right>
+               <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="796.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@logo.png" />
+                  </image>
+               </ImageView>
+               </right>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </center>
+</BorderPane>

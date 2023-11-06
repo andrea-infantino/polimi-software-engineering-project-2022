@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.polimi.ingsw.client.gui.JoinTeamScreen"
+            style="-fx-background-image: url(wallpaper.jpg)"
+            prefHeight="540.0" prefWidth="960.0">
+    <stylesheets>
+        <String fx:value="style.css" />
+    </stylesheets>
+    <VBox fx:id="window" alignment="CENTER" prefHeight="546.0" prefWidth="967.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+            <Label layoutX="-11.0" layoutY="118.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="Choose a Team:" textFill="WHITE">
+                <font>
+                    <Font name="Snap ITC" size="30.0" />
+                </font></Label>
+        <HBox layoutX="211.0" layoutY="115.0" alignment="CENTER">
+            <Button fx:id="buttonWhite" contentDisplay="CENTER" layoutX="165.0" layoutY="254.0" prefWidth="243.0">
+                <graphic>
+                    <ImageView fx:id="buttonImageWhite" fitHeight="165.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);">
+                        <Image url="@whiteTeam.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button fx:id="buttonBlack" contentDisplay="CENTER" layoutX="165.0" layoutY="254.0" prefWidth="243.0">
+                <graphic>
+                    <ImageView fx:id="buttonImageBlack" fitHeight="165.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);">
+                        <Image url="@blackTeam.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </VBox>
+    <StackPane fx:id="popup">
+        <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#0000008f" height="540.0" stroke="BLACK" strokeType="INSIDE" width="960.0" />
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Label style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="Team full, choose another one..." textFill="WHITE">
+                    <font>
+                        <Font name="Snap ITC" size="40.0" />
+                    </font>
+                </Label>
+                <Button fx:id="okButton" contentDisplay="CENTER" layoutX="165.0" layoutY="254.0" prefWidth="243.0" text="Ok">
+                    <font>
+                        <Font name="Snap ITC" size="40.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fx:id="okButtonImage" fitHeight="165.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);">
+                            <Image url="@connect_button.png" />
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+    </StackPane>
+
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-image: url(wallpaper.jpg)" fx:controller="it.polimi.ingsw.client.gui.LoadingScreen" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <StackPane>
+        <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#0000008f" height="540.0" stroke="BLACK" strokeType="INSIDE" width="960.0" />
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Label text="Loading..." style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" textFill="WHITE">
+                    <font>
+                        <Font name="Snap ITC" size="40.0" />
+                    </font>
+                </Label>
+                <ImageView>
+                    <Image url="@Loading.gif" />
+                </ImageView>
+            </children>
+        </VBox>
+    </StackPane>
+</AnchorPane>

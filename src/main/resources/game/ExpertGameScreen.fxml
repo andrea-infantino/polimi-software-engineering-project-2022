@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="540" maxWidth="960" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-image: url(wallpaper.jpg)" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.client.gui.game.ExpertGameScreen">
+    <StackPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <ImageView preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0); -fx-opacity: 0.5;">
+            <Image url="@graphics/board/sea.jpg" />
+        </ImageView>
+        <Group fx:id="islands">
+
+        </Group>
+        <Group fx:id="clouds">
+        </Group>
+        <Label fx:id="messages" disable="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" textFill="white" visible="false">
+            <font>
+                <Font name="Snap ITC" size="50.0" />
+            </font>
+        </Label>
+    </StackPane>
+    <VBox alignment="CENTER_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+        <Group fx:id="schoolHeader">
+        </Group>
+        <Group fx:id="playerNames">
+        </Group>
+        <Group fx:id="school">
+            <ImageView fx:id="schoolImage" fitHeight="250" preserveRatio="true" rotate="-90" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" y="10">
+                <Image url="@graphics/board/school.png" />
+            </ImageView>
+            <Rectangle fx:id="diningRoom" fill="TRANSPARENT" height="297.0" layoutX="181.0" layoutY="32.0" width="215.0">
+            </Rectangle>
+        </Group>
+        <Group fx:id="coins">
+            <ImageView style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" fitHeight="50" preserveRatio="true" translateX="0" translateY="0">
+                <Image url="@graphics/board/coin.png">
+                </Image>
+            </ImageView>
+        </Group>
+    </VBox>
+    <VBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="0.0">
+        <Group fx:id="assistantCardsPlayed">
+        </Group>
+    </VBox>
+    <VBox fx:id="deckContainer" alignment="BOTTOM_LEFT" layoutY="471.0" prefHeight="241.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Group fx:id="deckZone">
+            <Rectangle fx:id="zone" />
+            <Group fx:id="deck">
+            </Group>
+        </Group>
+    </VBox>
+    <VBox alignment="TOP_LEFT" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Group fx:id="characterCardsZone">
+            <ImageView fx:id="character_card_0" fitHeight="200" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" translateY="50">
+
+            </ImageView>
+            <ImageView fx:id="character_card_1" fitHeight="200" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" translateX="170" translateY="50">
+
+            </ImageView>
+            <ImageView fx:id="character_card_2" fitHeight="200" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" translateX="340" translateY="50">
+
+            </ImageView>
+            <ImageView disable="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" fitHeight="50" preserveRatio="true" translateX="-2" translateY="44">
+                <Image url="@graphics/board/coin.png">
+                </Image>
+            </ImageView>
+            <ImageView disable="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" fitHeight="50" preserveRatio="true" translateX="168" translateY="44">
+                <Image url="@graphics/board/coin.png">
+                </Image>
+            </ImageView>
+            <ImageView disable="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" fitHeight="50" preserveRatio="true" translateX="338" translateY="44">
+                <Image url="@graphics/board/coin.png">
+                </Image>
+            </ImageView>
+            <Label fx:id="card_cost_0" layoutX="15.0" layoutY="15.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="0" textFill="white" translateX="-2" translateY="44">
+                <font>
+                    <Font name="Snap ITC" size="15.0" />
+                </font>
+            </Label>
+            <Label fx:id="card_cost_1" layoutX="15.0" layoutY="15.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="0" textFill="white" translateX="168" translateY="44">
+                <font>
+                    <Font name="Snap ITC" size="15.0" />
+                </font>
+            </Label>
+            <Label fx:id="card_cost_2" layoutX="15.0" layoutY="15.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);" text="0" textFill="white" translateX="338" translateY="44">
+                <font>
+                    <Font name="Snap ITC" size="15.0" />
+                </font>
+            </Label>
+        </Group>
+    </VBox>
+</AnchorPane>

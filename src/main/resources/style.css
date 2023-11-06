@@ -1,0 +1,38 @@
+.button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+.button:focused {
+    -fx-border-color: transparent, black;
+    -fx-border-width: 0, 0;
+    -fx-border-style: solid;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 0 0 0 0, 0;
+}
+.button:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+.toggle-button {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0.0, 0.0);
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+}
+
+.toggle-button:focused {
+    -fx-border-color: transparent, black;
+    -fx-border-width: 0, 0;
+    -fx-border-style: solid;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 0 0 0 0, 0;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #aaaaaa;
+}
